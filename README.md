@@ -31,3 +31,12 @@ All bbox were labeled by Roboflow platform
 Detector was trained on mmDection framework
 - [YOLOX-X-OpenImage-SideView-epoch-84](https://drive.google.com/file/d/102fdWTTE9yEebbpxRWq4T7IfCs3wz-Ga/view?usp=drive_link)
 - [YOLOX-X-TopView-epoch-108](https://drive.google.com/file/d/107jsOQaMFDIgzhwYijcTEEzJzY4f4VIZ/view?usp=drive_link)
+
+## Installation
+All code use the following libraries or download [this-share-folder](https://drive.google.com/drive/folders/19w4aLqVd-4yNIrIoPnCK3YmiOvv5ywHR?usp=drive_link) for installation
+```
+mmcv==1.7.1
+mmdet==2.28.1
+torch==1.9.0+cu111
+torchvision==0.10.0+cu111
+```
