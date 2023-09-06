@@ -22,18 +22,23 @@ can be used to monitor the traffic for intelligent transportation system
 
 ## Image dataset
 OpenImage dataset was downloaded by [OIDv4_toolkit](https://github.com/EscVM/OIDv4_ToolKit)
-All bbox were labeled by Roboflow platform
-- [OpenImage](https://drive.google.com/drive/folders/1aHI5zM4O4-kioMd2sqFKfQ52K-YxaJ82?usp=sharing)
-- [SideView](https://drive.google.com/drive/folders/1uZwRIjzAzH3nWKIeyTnNgtMyBNPCsS0l?usp=sharing)
-- [TopView](https://drive.google.com/drive/folders/1j3ubao87gRmH0-f15GpU5udjAqRvGZxP?usp=drive_link)
+All bbox were labeled by Roboflow platform to 6 classes (Bus Car Motorcycle Pickup Truck Van)
+- [OpenImage](https://drive.google.com/file/d/1VvSpeAeW_1VVo9lw5atmMKuLcFyFWDIa/view?usp=sharing)
+- [SideView](https://drive.google.com/file/d/1WUV0sQz7cU9-iEU7Bt5ZpKgz-wrSg4ab/view?usp=sharing)
+- [TopView](https://drive.google.com/file/d/1ckQwe9w8neZyAFcdNxgtWwWfo-RiNlA6/view?usp=sharing)
 
-## Checkpoint
-Detector was trained on mmDection framework
-- [YOLOX-X-OpenImage-SideView-epoch-84](https://drive.google.com/file/d/102fdWTTE9yEebbpxRWq4T7IfCs3wz-Ga/view?usp=drive_link)
-- [YOLOX-X-TopView-epoch-108](https://drive.google.com/file/d/107jsOQaMFDIgzhwYijcTEEzJzY4f4VIZ/view?usp=drive_link)
+## Model
+Detector was trained on mmDection with following parameter
+- optimizer is SGD
+- learning rate is 0.0025
+- samples per gpu is 8
+### Download
+- [YOLOX-X-OpenImage](https://drive.google.com/file/d/1iyX9a9jYXBLf5ZN8UeN5F-NTD6OVcdKH/view?usp=sharing)
+- [YOLOX-X-OpenImage+SideView-epoch-84](https://drive.google.com/file/d/1imimaO5LPmcw-t2NkW5W7CYrFDsVgXAb/view?usp=sharing)
+- [YOLOX-X-TopView-epoch-108](https://drive.google.com/file/d/1LvYMqdvwnVhmwUvOXAIwu1HfuRn-8gA-/view?usp=sharing)
 
 ## Installation
-All code use the following libraries or download [this-share-folder](https://drive.google.com/drive/folders/19w4aLqVd-4yNIrIoPnCK3YmiOvv5ywHR?usp=drive_link) for installation
+All code use the following libraries or download [this-share-folder](https://drive.google.com/drive/folders/1XJ-6RUWl4rPU96z2U5ZTCsw0xYP2lRUL?usp=sharing) for installation
 ```
 mmcv==1.7.1
 mmdet==2.28.1
